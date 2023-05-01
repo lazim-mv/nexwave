@@ -5,7 +5,7 @@ function Form() {
     <div className="formHeightContainer">
       <div className="formContainer">
         <div className="formH1Container">
-          <h1>Let's take your brand to the next level.</h1>
+          <h1>Let&apos;s take your brand to the next level.</h1>
         </div>
         <div className="formH3Container">
           <h3>
@@ -17,7 +17,7 @@ function Form() {
           <a href="">mail.com</a>
         </div>
         <div className="formBottomContainer">
-          <h2>Let's Talk</h2>
+          <h2>Let&apos;s Talk</h2>
           <a href="">xyz@nexwave.domain</a>
         </div>
       </div>

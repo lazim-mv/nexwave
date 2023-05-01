@@ -11,7 +11,7 @@ function Hero() {
         <h1 className="heroLine3">Change</h1>
       <div className="heroDesc">
       <p>
-        We're a full-service UX design and branding agency that rolls up our
+        We&apos;re a full-service UX design and branding agency that rolls up our
         sleeves and works closely with our clients. Together, we craft
         unforgettable user experiences that span all platforms and touchpoints
         of brands. We go through a detailed process of brainstorming, designing,

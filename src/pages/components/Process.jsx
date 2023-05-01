@@ -28,7 +28,7 @@ function Process() {
           <div className="processDescContainer">
             <p className="processP">
               Our process at the core is a human-centered design approach. We
-              immerse ourselves in your customers' world to better understand
+              immerse ourselves in your customers world to better understand
               their needs and pain points, creating innovative solutions that
               elevate their experience with your brand or product.
             </p>
