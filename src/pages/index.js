@@ -52,8 +52,8 @@ function openingAnimation() {
   };
 
   const removeStyles = () => {
-    topContainer.style.height = "";
-    topContainer.style.overflow = "";
+    topContainer.style.height = "auto";
+    // topContainer.style.overflow = "auto";
   };
 
   topContainer.style.height = "100vh";
