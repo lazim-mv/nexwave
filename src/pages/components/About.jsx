@@ -31,7 +31,7 @@ function About() {
         <h1 className="whatWeDo">What we do ?</h1>
       </div>
       <div className="marginContainer ">
-        <div className="aboutContainer ">
+        <div className="aboutContainer reveal ">
           <div className="aboutH1Container ">
             <h1 className="aboutH1 ">
               {/* <span>We Build Brands that </span>Drive Change */}
@@ -49,7 +49,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="aboutContainer  ">
+        <div className="aboutContainer reveal  ">
           <div className="aboutDesc ">
             <p className="aboutP aboutCol ">
               Our branding agency knows that a brand is more than just a logo or
@@ -66,7 +66,7 @@ function About() {
             </h1>
           </div>
         </div>
-        <div className="aboutContainer  ">
+        <div className="aboutContainer reveal  ">
           <div className="aboutH1Container ">
             <h1 className="aboutH1 ">
               {/* <span>We Build Brands that </span>Drive Change */}
@@ -82,7 +82,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="aboutContainer  ">
+        <div className="aboutContainer reveal  ">
           <div className="aboutDesc ">
             <p className="aboutP aboutCol ">
               At Nexwave, we know that great products require both top-notch
@@ -101,7 +101,7 @@ function About() {
             </h1>
           </div>
         </div>
-        <div className="aboutContainer  ">
+        <div className="aboutContainer reveal  ">
           <div className="aboutH1Container ">
             <h1 className="aboutH1 ">
               {/* <span>We Build Brands that </span>Drive Change */}
@@ -120,7 +120,7 @@ function About() {
             </p>
           </div>
         </div>
-        <div className="aboutContainer  ">
+        <div className="aboutContainer reveal  ">
           <div className="aboutDesc ">
             <p className="aboutP aboutCol ">
               At Nexwave, we believe that business software shouldn&apos;t be boring
