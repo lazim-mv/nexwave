@@ -1,39 +1,28 @@
-import React, { useEffect } from "react";
+import React, { useState } from "react";
 
 function Services() {
-  // useEffect(() => {
-  //   window.addEventListener("scroll",reveal );
+  const [showDescription, setShowDescription] = useState(false);
 
-  //   return () => {
-  //     window.removeEventListener("scroll", reveal);
-  //   };
-  // }, []);
-
-  // function reveal() {
-  //   var reveals = document.querySelectorAll(".reveal");
-
-  //   for (var i = 0; i < reveals.length; i++) {
-  //     var windowHeight = window.innerHeight;
-  //     var revealTop = reveals[i].getBoundingClientRect().top;
-  //     var revealPoint = 100;
-
-  //     if (revealTop < windowHeight - revealPoint) {
-  //       reveals[i].classList.add("active");
-  //     } else {
-  //       reveals[i].classList.remove("active");
-  //     }
-  //   }
-  // }
+  function toggleDescription() {
+    setShowDescription(!showDescription);
+  }
 
   return (
     <div className="serviceHeight reveal">
-      <div className="whatsToExpectContainer">
+      <div
+        className="whatsToExpectContainer reveal"
+        onClick={toggleDescription}
+      >
         <h1 className="whatWeDo">Whats to expect ?</h1>
       </div>
-      <div className="serviceTopContainer">
-        <div className="servicesContainer ">
+      <div
+        className={`serviceTopContainer reveal ${
+          showDescription ? "showDescription" : ""
+        }`}
+      >
+        <div className="servicesContainer">
           <div className="serviceCard1">
-            <div className="serviceInnerContianer ">
+            <div className="serviceInnerContianer">
               <div className="serviceH1Container">
                 <h1 className="serviceH1">Curiosity</h1>
               </div>

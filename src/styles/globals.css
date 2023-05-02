@@ -167,7 +167,7 @@ body{
 .showing > div  {
   opacity: 1;
   transform: translateY(0);
-  margin: 0px;
+  /* margin: 0px; */
 }
 
 .lineContainer{
@@ -462,12 +462,10 @@ body{
 .aboutHeight{
   height: 100%;
   margin: 100px 0px;
+  margin-bottom: 250px;
 }
 
-.whatWeDoContainer{
-  border-top: 1px solid #F8F8FF;
-  margin-top: 100px;
-}
+
 
 .marginContainer{
   background-image: linear-gradient(to bottom, #000000, #333333);
@@ -698,112 +696,76 @@ section .cardContainer .cardDesc{
 
 /* Services Section Start */
 
-.serviceHeight{
-  height: 100vh;
-  margin: 100px 0px;
-  padding-top: 80px;
-  border-top: 2px solid #F8F8FF;
-  /* border-bottom: 2px solid #F8F8FF; */
-  background-color: #111;
-}
-
 .whatWeDo{
   font-size: 3vw;
   color: #F8F8FF;
   letter-spacing: 1.6px;
-  margin-left: 140px;
-  /* -webkit-text-stroke: 1px #B31B10;
-  text-shadow: 0 0 6px rgba(232, 81, 84, 0.5), 0 0 20px rgba(179, 27, 16, 0.5);
-  text-shadow: 0 0 6px rgba(232, 81, 84, 2.2), 0 0 20px rgba(179, 27, 16, 0.5);
-  text-shadow: -2px -1px 9px rgba(232, 81, 84, 2.2), 10px 6px 16px rgba(179, 27, 16, 0.2); */
+  margin-left: 100px;
 }
 
-.serviceTopContainer{
+.serviceHeight{
   display: flex;
-  justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
+.whatsToExpectContainer {
+  align-self: flex-start;
+  padding: 40px;
+}
 
-.servicesContainer{
-  margin-top: 40px;
-  display: flex;
+.serviceTopContainer {
   width: 80%;
-  flex-wrap: wrap;
+  display: flex;
   justify-content: center;
-  align-items: center;
-  gap: 40px;
-  margin-bottom: 100px;
 }
 
-.serviceCard1{
-  height: 370px;
-  width: 30%;
-  border: 2px solid #111;
-  /* transition: border-color 0.7s ease-out, box-shadow 0.7s ease-out; */
-  box-shadow: 1px 6px 10px rgba(255, 255, 255, 0.150);
-  transition: all 0.2s;
+.servicesContainer {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+}
+
+.serviceCard1 {
   background-color: #111;
   border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-right: 20px;
+  transition: margin-right 0.3s ease-in-out;
+  box-shadow: 1px 6px 10px rgba(255, 255, 255, 0.150);
+  width: 30%;
 }
 
-.serviceCard1:hover {
+.serviceCard1:hover{
   box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.4);
-  transform: scale(1.01);
+
 }
 
-/* .serviceCard1:hover {
-  border-color: transparent;
-  box-shadow: none;
-} */
+
+
 
 .serviceInnerContianer {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  padding: 5px 25px;
+  padding: 40px;
 }
-
-.serviceCard {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 10px;
-  transition: all 0.5s ease;
-  cursor: pointer;
-}
-
-/* .serviceInnerContianer:hover {
-  transform: rotateY(180deg);
-} */
 
 .serviceH1Container {
-  text-align: center;
+  margin-bottom: 40px;
 }
 
 .serviceH1 {
-  margin: 0;
+  color: #F8F8FF;
   font-size: 3vw;
-  font-weight: bolder;
+  margin-bottom: 20px;
+}
+
+.serviceP {
   color: #F8F8FF;
-}
-
-.serviceDes {
-  text-align: center;
-  display: flex;
-  margin-top: 5px;
-  transition: all 0.5s ease;
-  transition: opacity 0.5s ease-in-out;
-  transition-delay: 2s;
-}
-
-.serviceP{
   font-size: 1.3vw;
+  line-height: 1.5;
   letter-spacing: 1.6px;
-  text-align: unset;
-  color: #F8F8FF;
 }
+
 
 /* Services Section End */
 
@@ -993,6 +955,7 @@ section .cardContainer .cardDesc{
 }
 
 .ourServicesSection{
+  height: 215px;
   width:25%;
   display: flex;
   align-items: flex-start;
@@ -1023,6 +986,7 @@ section .cardContainer .cardDesc{
 }
 
 .social{
+  height: 215px;
   width:25%;
   display: flex;
   align-items: flex-start;
@@ -1052,6 +1016,7 @@ section .cardContainer .cardDesc{
   margin-top: 10px;
 }
 .getInTouch{
+  height: 215px;
   width:40%;
   display: flex;
   align-items: flex-start;
@@ -1093,6 +1058,54 @@ section .cardContainer .cardDesc{
   padding-bottom: 2px;
 }
 /* Footer Section End */
+
+/* PrCard Section Start*/
+
+.content1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background: #111;
+}
+
+.card {
+  padding: 20px;
+  width: 350px;
+  height: 280px;
+  position: relative;
+  top: 7%;
+  display: grid;
+  background-color: #000;
+  grid-template-rows: 20px 50px 1fr 50px;
+  border-radius: 10px;
+  box-shadow: 1px 6px 10px rgba(255, 255, 255, 0.150);
+  transition: all 0.2s;
+  background: #111;
+  margin: 2%;
+}
+
+.card:hover {
+  box-shadow: 0px 6px 10px rgba(255, 255, 255, 0.4);
+  transform: scale(1.01);
+}
+
+.cbody {
+  font-size: 3vw;
+  color: #F8F8FF;
+  letter-spacing: 1.6px;
+}
+
+.cfooter{
+  font-size: 1vw;
+  color: #F8F8FF;
+  letter-spacing: 1.6px;
+  padding-top: 10px;
+}
+
+/* PrCard Section End*/
 
 
 /* Animations */
@@ -1177,6 +1190,263 @@ section .cardContainer .cardDesc{
   to {
     transform: translateX(0%);
   }
+}
+
+@media (max-width:600px) {
+  /* Header Section Start */
+
+  .headerContainer{
+    width: 90%;
+    height: 70px;
+  }
+
+  .headerList{
+    font-size: 3.8vw;
+  }
+
+  .headerContact{
+    /* height: 40%; */
+    width: 20vw;
+  }
+
+  .headerContact button{
+    font-size: 3.8vw;
+  }
+  /* Header Section End */
+
+  /* HeroNewContainer Section Start */
+  
+
+  .gradientText{
+    margin-top: 35%;
+    font-size: 18vw;
+  }
+
+  .heroNewContent{
+    margin-top: 12px;
+    font-size: 3vw;
+  }
+
+  .buttonContainer{
+    height: 40px;
+    width: 19%;
+  }
+
+  .heroBtn{
+    font-size: 12px;
+  }
+
+  /* HeroNewContainer Section End */
+
+  /* IntroSection Start */
+
+  .IntroContentsContainer{
+    height: 100%;
+  }
+
+  .IntroDesc{
+    width: 90%;
+  }
+
+  .IntroP{
+    font-size: 4vw;
+  }
+
+  /* IntroSection End */
+
+  /* Service Section Start */
+
+  .servicesContainer{
+    flex-direction: column;
+  }
+
+  .serviceCard1 {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .serviceInnerContianer {
+    padding: 20px;
+  }
+
+  .serviceH1Container {
+    margin-bottom: 20px;
+  }
+
+  .serviceP {
+    font-size: 16px;
+  }
+
+  /* Service Section End */
+
+
+  /* About Section Start */
+
+  .aboutHeight{
+    margin-bottom: 0px;
+    margin: 60px 0px;
+  }
+
+  .whatWeDoContainer{
+    padding: 40px;
+  }
+
+  .whatWeDo{
+    font-size: 4vw;
+    margin-left: 20px;
+  }
+
+  .marginContainer .aboutContainer{
+    height: 300px;
+  }
+
+  .aboutH1Container{
+    margin-left: 20px;
+  }
+
+  .aboutContainer:nth-of-type(even) .aboutH1Container{
+    margin-right: 20px;
+  }
+
+  .aboutH1Container:nth-child(even){
+    margin: 0px;
+    margin-right: 20px;
+  }
+
+  .aboutH1{
+    font-size: 6.7vw;
+  }
+
+  .aboutContainer:nth-of-type(odd) .aboutDesc{
+    width: 60%;
+  }
+
+  .aboutContainer:nth-of-type(even) .aboutDesc{
+    width: 60%;
+    margin: 0px;
+    margin-left: 20px;
+  }
+
+  .aboutP{
+    font-size: 2.6vw;
+  }
+
+  .aboutContainer:hover .aboutCol:nth-child(odd){
+    margin-right: 20px;
+  }
+
+  .aboutContainer:hover .aboutCol:nth-child(even){
+    margin: 0px;
+    margin-left: 20px;
+  }
+
+
+  /* About Section End */
+
+
+
+
+  /* Process Section Start */
+
+  .processHeight{
+    height: 30vh;
+    padding-bottom: 60px;
+  }
+
+  .processHeadingH1{
+    /* width: 90px; */
+    margin: 0px;
+  }
+
+  .dot{
+    display: none;
+  }
+
+  .processHeadingH1 h1{
+    /* font-size: 4vw; */
+  }
+
+  .backSlash{
+    border: 1px solid #F8F8FF;
+    height: 22px;
+    margin: 0px 6px;
+  }
+  
+  .processContentsContainer{
+    flex-direction: column;
+    margin: 0px;
+    padding-left: 0px;
+    width: 100%;
+  }
+
+  .processH1Container h1{
+    font-size: 4.7vw;
+  }
+
+  .processDescContainer{
+    width: 90%;
+    margin-top: 8px;
+  }
+
+  .processP{
+    font-size: 2.9vw;
+  }
+
+  .linearLine{
+    display: none;
+  }
+  
+  /* Process Section End */
+
+
+  /* Footer Section Start */
+
+  .footerHeight{
+    height: 100%;
+  }
+
+  .footerContainer{
+    width: 90%;
+    padding: 40px 0px;
+  }
+
+  .ourServicesSection{
+    height: 133px;
+  }
+
+  .ourServicesSectionH1 h1{
+    font-size: 2.3vw;
+  }
+
+  .ourServicesSection p{
+    font-size: 2.3vw;
+  }
+
+  .social{
+    height: 133px;
+  }
+
+  .socialH1Container h1{
+    font-size: 2.3vw;
+  }
+
+  .social p{
+    font-size: 2.3vw;
+  }
+
+  .getInTouch{
+    height: 133px;
+  }
+
+  .getInTouchH1Container h1{
+    font-size: 2.3vw;
+  }
+
+  .getInTouch p{
+    font-size: 2.3vw;
+  }
+
+  /* Footer Section End */
 }
 
 
